@@ -91,6 +91,7 @@ main, .notepad-share-icons, .notepad-disqus {
         .notepad-blog-menu ul li.notepad-mobile-close-btn a {
           color: white; }
     .notepad-blog-menu ul.opened {
+      z-index: 2;
       -webkit-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
@@ -132,6 +133,10 @@ main, .notepad-share-icons, .notepad-disqus {
             height: auto; }
             .notepad-blog-menu ul li a:hover {
               border-bottom: 0.1875rem solid #e51843; } }
+
+.notepad-menu li a:hover{
+  border-bottom: 0.1875rem solid #e51843;
+}
 
 .notepad-site-head .notepad-site-head-menu {
   background: white; }
@@ -183,16 +188,40 @@ main, .notepad-share-icons, .notepad-disqus {
           height: 520px;
         }
       }
-      @media only screen and (min-width: 10em) {
+      @media only screen and (min-width: 1em) {
             .notepad-site-head .notepad-site-head-content h1 {
               position: relative;
-              top: 90px;
+              top: 40px;
+              font-size: 0.5rem;
                 }
             .notepad-site-head .notepad-site-head-content h2 {
               position: relative;
-              top: 90px;
+              top: 40px;
+              font-size: 1.375rem;
               }
             }
+      @media only screen and (min-width: 16em) {
+            .notepad-site-head .notepad-site-head-content h1 {
+              position: relative;
+              top: 60px;
+              font-size: 0.5rem;
+                }
+            .notepad-site-head .notepad-site-head-content h2 {
+              position: relative;
+              top: 60px;
+              font-size: 1.375rem;
+              }
+            }
+      @media only screen and (min-width: 25.063em) {
+        .notepad-site-head .notepad-site-head-content h1 {
+          position: relative;
+          top: 60px;
+          font-size: 1rem; }
+        .notepad-site-head .notepad-site-head-content h2 {
+          position: relative;
+          top: 60px;
+          font-size: 2.25rem;
+          font-weight: 700; } }
   @media only screen and (min-width: 40.063em) {
     .notepad-site-head .notepad-site-head-content h1 {
       position: relative;
