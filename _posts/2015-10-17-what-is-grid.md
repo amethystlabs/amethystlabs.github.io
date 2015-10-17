@@ -152,7 +152,7 @@ in building Grid and its plugins. Hit us up at [team@amethystlabs.org](mailto:te
 be a part the change.
 
 >Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has.
--Margaret Mead
-
+>
+>-Margaret Mead
 
 ![mockup](/images/tada.jpg)
