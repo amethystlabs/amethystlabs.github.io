@@ -9,7 +9,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="/" />
-<updated>2015-10-17T18:19:52+05:30</updated>
+<updated>2015-10-17T20:22:24+05:30</updated>
 <id>/</id>
 <author>
   <name>Amethyst Labs</name>
@@ -20,10 +20,10 @@
 
 <entry>
   <title type="html"><![CDATA[What is Amethyst Grid?]]></title>
-  <link rel="alternate" type="text/html" href="/existence/readability-feature-post"/>
-  <id>/existence/readability-feature-post</id>
-  <published>2013-05-23T00:00:00+05:30</published>
-  <updated>2013-05-23T00:00:00+05:30</updated>
+  <link rel="alternate" type="text/html" href="/existence/what-is-grid"/>
+  <id>/existence/what-is-grid</id>
+  <published>2015-10-17T00:00:00+05:30</published>
+  <updated>2015-10-17T00:00:00+05:30</updated>
   <author>
     <name>Amethyst Labs</name>
     <uri></uri>
@@ -40,7 +40,7 @@ less pressure while answering their questions. Except for the million dollar one
   &lt;p&gt;What are you building? What exactly is Grid?&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;My answer; wrenching guts, sweating palms, and a fake smile. It is not that I don’t
+&lt;p&gt;My answer involves wrenching guts, sweating palms, and a fake smile. It is not that I don’t
 have a definition of Grid, I do, but that definition is not what people want to
 hear. What they really want to know is &lt;em&gt;What am I building for them?&lt;/em&gt; or &lt;em&gt;What value
 does my product bring to them?&lt;/em&gt;. And THAT is a tough question. Tough, because Grid
@@ -84,15 +84,102 @@ in tracking survivors. Or if you find yourself in a dangerous neighborhood, you 
 &lt;p&gt;We have you covered when you don’t get a signal on your phone, but why would you need us when you are on Internet.
 There is everything, literally the world, on net, so what is the purpose of Grid on Internet? To answer that, let us first look
 at the current state of Internet. There are thousands of platforms which offer many services for users, they can use them to
-connect, chat, or do anything they like. Users join the platform they wish to use and enjoy the services.Now take a moment to realize that you are so dependent on these platforms that if you are not on them then you are simply isolated. If you want use
+connect, chat, or do anything they like. Users join the platform they wish to use and enjoy the services.Now take a moment to realize that you are so dependent on these platforms that if you are not on them then you are simply isolated. If you want to use
 a service, you need to be on a platform. And if you think about it, these platforms control what you can do and can not.&lt;/p&gt;
 
 &lt;p&gt;With Grid we aim to change that. The app checks if Internet is available and if it is, then the users are connected directly
 to each other without any central intervention, just like the offline case above. And now you don’t need to depend on any platform to use a service. While working on it, I realized one thing, that Internet is great for long distance connections, without it we just can’t do anything, but the way we have been using it renders it impossible for us to connect around us.
-It’s like everyone around you is invisible or simply non existent unless you visit the central park. In the park, you get everything, there are people, shops, everything, but outside of it, nothing. &lt;/p&gt;
+It’s like everyone around you is invisible or simply non existent unless you visit the central park. In the park, you get everything, there are people, shops, everything, but outside of it, nothing.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-customary-api&quot;&gt;The customary API&lt;/h2&gt;
+
+&lt;p&gt;Grid would be absolutely useless if one can not build applications for it. And for that reason, we have built a framework
+which makes it possible for developers to craft unique experiences on Grid. The plugins(applications for Grid) are normal
+applications which can interact with the main Grid app through IPC. A &lt;code&gt;get started&lt;/code&gt; will be added very soon, so that
+you can begin with the development.&lt;/p&gt;
+
+&lt;h4 id=&quot;sample-code-which-looks-dead-easy-to-use&quot;&gt;Sample code which looks dead easy to use&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onLoad&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;cm&quot;&gt;/*What to do when the plugin loads. Here, we will simply Log the loading,&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;           because have nothing to intialize.*/&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOG_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;onLoad: Plugin Loading.&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;cm&quot;&gt;/*This is where you plugin really starts running. Configurations are complete&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        and now you can &amp;quot;do the tango&amp;quot;.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        For this example, we will launch an activity called &amp;quot;PluginActivity&amp;quot;.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        This is your launcher activity.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        Add it to the AndroidManifest.xml. Or dont, we will talk about the Manifest soon anyways.*/&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOG_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;run: Running ChatterPlug. Starting Activity&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Intent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getBaseContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PluginActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setFlags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;FLAG_ACTIVITY_NEW_TASK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;startActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onUpdate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PluginConfiguration&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pluginConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;cm&quot;&gt;/*What to do when the plugin receives an update from the Amethyst app.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        This method is intended to be used to monitor Grid&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        activity like change in device&amp;#39;s Grid-State. We&amp;#39;ll just log this too,&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        &amp;#39;cause..well.. this is just an example.*/&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOG_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;onUpdate: Update received.&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onUnload&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;cm&quot;&gt;/*This is the exit point of your plugin. By now, your connection with the&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        Amethyst app has been terminated is&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        in the process of termination. So, you know, clean up after yourself,&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        like close any services you started,&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        or save data to the device.*/&lt;/span&gt;   
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onMessageReceived&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PluginMessage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pluginMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;cm&quot;&gt;/*This method is called when you receive a message from someone&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        on The Grid. Handle this the way you want.*/&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOG_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;onUpdate: Received updates. They are:&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Describe the contents of this message&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;pluginMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;describeContents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;moar-plugins&quot;&gt;Moar plugins&lt;/h2&gt;
+&lt;p&gt;We have 3 plugins lined up for you. The first one is a simple messenger which runs on Grid.
+Second we have &lt;code&gt;Aether&lt;/code&gt;, it is the www of our network and the de facto browser for us.
+Lastly, we have &lt;code&gt;Zeal&lt;/code&gt;, it is a music app which streams the music located on your device to the
+nearby Grid users.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/zeal.jpg&quot; alt=&quot;Zeal&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-grid-app&quot;&gt;The Grid app&lt;/h2&gt;
+
+&lt;p&gt;We have been working on it since a year now, and there was a plan of having a private beta
+but we had to scrap that up because things broke too easily. The API and the network, both
+have been tested extensively now, and the results are promising. We upgraded our plugin framework, and
+the network as well. It is now far more easier to use the API and the host app’s battery usage
+has been brought down too. We plan to have an alpha in december and a private beta in january(could start from Jan 15th).&lt;/p&gt;
+
+&lt;p&gt;And now we are on the same page regarding the project. You have a clear idea of it now and we would
+really love to talk more about it if you want. And it would be really awesome if you helped us
+in building Grid and its plugins. Hit us up at &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#116;&amp;#101;&amp;#097;&amp;#109;&amp;#064;&amp;#097;&amp;#109;&amp;#101;&amp;#116;&amp;#104;&amp;#121;&amp;#115;&amp;#116;&amp;#108;&amp;#097;&amp;#098;&amp;#115;&amp;#046;&amp;#111;&amp;#114;&amp;#103;&quot;&gt;&amp;#116;&amp;#101;&amp;#097;&amp;#109;&amp;#064;&amp;#097;&amp;#109;&amp;#101;&amp;#116;&amp;#104;&amp;#121;&amp;#115;&amp;#116;&amp;#108;&amp;#097;&amp;#098;&amp;#115;&amp;#046;&amp;#111;&amp;#114;&amp;#103;&lt;/a&gt;, and
+be a part the change.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it’s the only thing that ever has.
+-Margaret Mead&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tada.jpg&quot; alt=&quot;mockup&quot; /&gt;&lt;/p&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;/existence/readability-feature-post&quot;&gt;What is Amethyst Grid?&lt;/a&gt; was originally published by Amethyst Labs at &lt;a href=&quot;&quot;&gt;Amethyst Labs&lt;/a&gt; on May 23, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/existence/what-is-grid&quot;&gt;What is Amethyst Grid?&lt;/a&gt; was originally published by Amethyst Labs at &lt;a href=&quot;&quot;&gt;Amethyst Labs&lt;/a&gt; on October 17, 2015.&lt;/p&gt;</content>
 </entry>
 
 </feed>

@@ -23,7 +23,7 @@ Description: Awesome dude, awesome life
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="/images/amcover.jpeg">
+<meta name="twitter:image" content="/images/hompage-picture-01.jpg">
 
 <meta name="twitter:title" content="What is Amethyst Grid?">
 <meta name="twitter:description" content="Answering the whats and hows and whys.">
@@ -34,15 +34,15 @@ Description: Awesome dude, awesome life
 <meta property="og:type" content="article">
 <meta property="og:title" content="What is Amethyst Grid?">
 <meta property="og:description" content="Answering the whats and hows and whys.">
-<meta property="og:url" content="/existence/readability-feature-post">
+<meta property="og:url" content="/existence/what-is-grid">
 <meta property="og:site_name" content="Amethyst Labs">
-<meta property="og:image" content="/images/amcover.jpeg">
+<meta property="og:image" content="/images/hompage-picture-01.jpg">
 
 
 
 
 
-<link rel="canonical" href="/existence/readability-feature-post">
+<link rel="canonical" href="/existence/what-is-grid">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Amethyst Labs Feed">
 
 
@@ -118,12 +118,12 @@ Description: Awesome dude, awesome life
 
             <div class="notepad-post-title bg-check">
                 <h1>What is Amethyst Grid?</h1>
-                <p>by <strong>Amethyst Labs</strong> &#8212; on <a href="/tags/index.html#grid" data-toggle="tooltip" title="Posts tagged with grid" rel="tag">grid</a>&nbsp;&comma;&nbsp;<a href="/tags/index.html#amethyst" data-toggle="tooltip" title="Posts tagged with amethyst" rel="tag">amethyst</a> <strong><time datetime="2013-05-23T00:00:00+05:30">23 May 2013</time></strong></p>
+                <p>by <strong>Amethyst Labs</strong> &#8212; on <a href="/tags/index.html#grid" data-toggle="tooltip" title="Posts tagged with grid" rel="tag">grid</a>&nbsp;&comma;&nbsp;<a href="/tags/index.html#amethyst" data-toggle="tooltip" title="Posts tagged with amethyst" rel="tag">amethyst</a> <strong><time datetime="2015-10-17T00:00:00+05:30">17 Oct 2015</time></strong></p>
             </div>
             <div class="bg-img"></div>
         </header>
         <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
-        <img src="/images/amcover.jpeg" alt="cover-image" />
+        <img src="/images/hompage-picture-01.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
             <div><p>I haven’t been to a lot of networking events, nor have I met with a lot of startup
@@ -134,7 +134,7 @@ less pressure while answering their questions. Except for the million dollar one
   <p>What are you building? What exactly is Grid?</p>
 </blockquote>
 
-<p>My answer; wrenching guts, sweating palms, and a fake smile. It is not that I don’t
+<p>My answer involves wrenching guts, sweating palms, and a fake smile. It is not that I don’t
 have a definition of Grid, I do, but that definition is not what people want to
 hear. What they really want to know is <em>What am I building for them?</em> or <em>What value
 does my product bring to them?</em>. And THAT is a tough question. Tough, because Grid
@@ -178,27 +178,114 @@ in tracking survivors. Or if you find yourself in a dangerous neighborhood, you 
 <p>We have you covered when you don’t get a signal on your phone, but why would you need us when you are on Internet.
 There is everything, literally the world, on net, so what is the purpose of Grid on Internet? To answer that, let us first look
 at the current state of Internet. There are thousands of platforms which offer many services for users, they can use them to
-connect, chat, or do anything they like. Users join the platform they wish to use and enjoy the services.Now take a moment to realize that you are so dependent on these platforms that if you are not on them then you are simply isolated. If you want use
+connect, chat, or do anything they like. Users join the platform they wish to use and enjoy the services.Now take a moment to realize that you are so dependent on these platforms that if you are not on them then you are simply isolated. If you want to use
 a service, you need to be on a platform. And if you think about it, these platforms control what you can do and can not.</p>
 
 <p>With Grid we aim to change that. The app checks if Internet is available and if it is, then the users are connected directly
 to each other without any central intervention, just like the offline case above. And now you don’t need to depend on any platform to use a service. While working on it, I realized one thing, that Internet is great for long distance connections, without it we just can’t do anything, but the way we have been using it renders it impossible for us to connect around us.
-It’s like everyone around you is invisible or simply non existent unless you visit the central park. In the park, you get everything, there are people, shops, everything, but outside of it, nothing. </p>
+It’s like everyone around you is invisible or simply non existent unless you visit the central park. In the park, you get everything, there are people, shops, everything, but outside of it, nothing.</p>
+
+<h2 id="the-customary-api">The customary API</h2>
+
+<p>Grid would be absolutely useless if one can not build applications for it. And for that reason, we have built a framework
+which makes it possible for developers to craft unique experiences on Grid. The plugins(applications for Grid) are normal
+applications which can interact with the main Grid app through IPC. A <code>get started</code> will be added very soon, so that
+you can begin with the development.</p>
+
+<h4 id="sample-code-which-looks-dead-easy-to-use">Sample code which looks dead easy to use</h4>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onLoad</span><span class="o">()</span> <span class="o">{</span>
+         <span class="cm">/*What to do when the plugin loads. Here, we will simply Log the loading,</span>
+<span class="cm">           because have nothing to intialize.*/</span>
+
+        <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">LOG_TAG</span><span class="o">,</span> <span class="s">&quot;onLoad: Plugin Loading.&quot;</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/*This is where you plugin really starts running. Configurations are complete</span>
+<span class="cm">        and now you can &quot;do the tango&quot;.</span>
+<span class="cm">        For this example, we will launch an activity called &quot;PluginActivity&quot;.</span>
+<span class="cm">        This is your launcher activity.</span>
+<span class="cm">        Add it to the AndroidManifest.xml. Or dont, we will talk about the Manifest soon anyways.*/</span>
+
+        <span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="n">LOG_TAG</span><span class="o">,</span> <span class="s">&quot;run: Running ChatterPlug. Starting Activity&quot;</span><span class="o">);</span>
+        <span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="n">getBaseContext</span><span class="o">(),</span> <span class="n">PluginActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="n">intent</span><span class="o">.</span><span class="na">setFlags</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">FLAG_ACTIVITY_NEW_TASK</span><span class="o">);</span>
+        <span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onUpdate</span><span class="o">(</span><span class="n">PluginConfiguration</span> <span class="n">pluginConfiguration</span><span class="o">)</span> <span class="o">{</span>
+        <span class="cm">/*What to do when the plugin receives an update from the Amethyst app.</span>
+<span class="cm">        This method is intended to be used to monitor Grid</span>
+<span class="cm">        activity like change in device&#39;s Grid-State. We&#39;ll just log this too,</span>
+<span class="cm">        &#39;cause..well.. this is just an example.*/</span>
+
+        <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">LOG_TAG</span><span class="o">,</span> <span class="s">&quot;onUpdate: Update received.&quot;</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onUnload</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/*This is the exit point of your plugin. By now, your connection with the</span>
+<span class="cm">        Amethyst app has been terminated is</span>
+<span class="cm">        in the process of termination. So, you know, clean up after yourself,</span>
+<span class="cm">        like close any services you started,</span>
+<span class="cm">        or save data to the device.*/</span>   
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onMessageReceived</span><span class="o">(</span><span class="n">PluginMessage</span> <span class="n">pluginMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="cm">/*This method is called when you receive a message from someone</span>
+<span class="cm">        on The Grid. Handle this the way you want.*/</span>
+        <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">LOG_TAG</span><span class="o">,</span> <span class="s">&quot;onUpdate: Received updates. They are:&quot;</span><span class="o">);</span>
+        <span class="c1">// Describe the contents of this message</span>
+        <span class="n">pluginMessage</span><span class="o">.</span><span class="na">describeContents</span><span class="o">();</span>
+    <span class="o">}</span></code></pre></div>
+
+<h2 id="moar-plugins">Moar plugins</h2>
+<p>We have 3 plugins lined up for you. The first one is a simple messenger which runs on Grid.
+Second we have <code>Aether</code>, it is the www of our network and the de facto browser for us.
+Lastly, we have <code>Zeal</code>, it is a music app which streams the music located on your device to the
+nearby Grid users.</p>
+
+<p><img src="/images/zeal.jpg" alt="Zeal" /></p>
+
+<h2 id="the-grid-app">The Grid app</h2>
+
+<p>We have been working on it since a year now, and there was a plan of having a private beta
+but we had to scrap that up because things broke too easily. The API and the network, both
+have been tested extensively now, and the results are promising. We upgraded our plugin framework, and
+the network as well. It is now far more easier to use the API and the host app’s battery usage
+has been brought down too. We plan to have an alpha in december and a private beta in january(could start from Jan 15th).</p>
+
+<p>And now we are on the same page regarding the project. You have a clear idea of it now and we would
+really love to talk more about it if you want. And it would be really awesome if you helped us
+in building Grid and its plugins. Hit us up at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#116;&#101;&#097;&#109;&#064;&#097;&#109;&#101;&#116;&#104;&#121;&#115;&#116;&#108;&#097;&#098;&#115;&#046;&#111;&#114;&#103;">&#116;&#101;&#097;&#109;&#064;&#097;&#109;&#101;&#116;&#104;&#121;&#115;&#116;&#108;&#097;&#098;&#115;&#046;&#111;&#114;&#103;</a>, and
+be a part the change.</p>
+
+<blockquote>
+  <p>Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it’s the only thing that ever has.
+-Margaret Mead</p>
+</blockquote>
+
+<p><img src="/images/tada.jpg" alt="mockup" /></p>
 
             </div>
         </article>
         <div class="cf"></div>
         <div class="row text-center">
             <section class="notepad-post-share">
-                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;What is Amethyst Grid?&quot;%20/existence/readability-feature-post%20via%20&#64;amethystlabs"
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;What is Amethyst Grid?&quot;%20/existence/what-is-grid%20via%20&#64;amethystlabs"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
-                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=/existence/readability-feature-post"
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=/existence/what-is-grid"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
                     <i class="fa fa-facebook"></i>
                 </a>
-                <a class="google-icon" href="https://plus.google.com/share?url=/existence/readability-feature-post"
+                <a class="google-icon" href="https://plus.google.com/share?url=/existence/what-is-grid"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
                     <i class="fa fa-google-plus"></i>
                 </a>
