@@ -4,7 +4,7 @@ title: "What is Amethyst Grid?"
 description: "Answering the whats and hows and whys."
 category: existence
 tags: [grid, amethyst]
-imagefeature: hompage-picture-01.jpg
+imagefeature: whatgrid.jpg
 share: true
 comments: true
 featured: true
