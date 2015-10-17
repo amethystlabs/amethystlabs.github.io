@@ -1,8 +1,8 @@
 callback([
 
   {
-    "text": "Post with Cover Image and Text",
-    "href": "/theme/readability-feature-post"
+    "text": "What is Amethyst Grid?",
+    "href": "/existence/readability-feature-post"
   } 
 
 ])
