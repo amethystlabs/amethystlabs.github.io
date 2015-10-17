@@ -320,7 +320,7 @@ html, body, .notepad-post-container, .notepad-post-header {
   padding: 0;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
-  background: #f2f2f2; }
+  background: #212121; }
   @media only screen and (min-width: 40.063em) {
     .notepad-author-info {
       padding-top: 5rem;
@@ -340,17 +340,19 @@ html, body, .notepad-post-container, .notepad-post-header {
     .notepad-author-info .notepad-post-author .author-label {
       display: block;
       font-size: 1rem;
-      color: gray;
+      color: white;
       font-style: italic; }
     .notepad-author-info .notepad-post-author .author-website {
       font-size: 1rem; }
     .notepad-author-info .notepad-post-author h1 {
+      color: white;
       margin: 0;
       padding: 0;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       text-transform: uppercase; }
     .notepad-author-info .notepad-post-author > p {
+      color: white;
       font-size: 1.125rem; }
       .notepad-author-info .notepad-post-author > p a {
         color: #e51843; }

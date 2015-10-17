@@ -8,6 +8,7 @@ imagefeature: hompage-picture-01.jpg
 share: true
 comments: true
 featured: true
+author: io
 ---
 
 I haven't been to a lot of networking events, nor have I met with a lot of startup

@@ -9,6 +9,10 @@ dropcap:			true
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url: ''
 
+io:
+  name:          Rahul Ramteke
+  email:         rahul.ramteke@amethystlabs.org
+  description:   "I handle the networking stuff and I f****** love what I do. Huge fan of Pied Piper."
 # Owner/author information
 owner:
   name:           Amethyst Labs
