@@ -4,7 +4,7 @@ logo:             logo_amethyst_light_1.png
 disqus_shortname: amethystlabs
 share:            true
 dropcap:			true
-default_bg: 'logo_amethyst_light_1.png'
+default_bg: 'logo_amethyst_1.png'
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
