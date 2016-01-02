@@ -1,10 +1,10 @@
 title:            Amethyst Labs
 description:      "Nothing goes down."
-logo:             logo.png
+logo:             logo_amethyst_light_1.png
 disqus_shortname: amethystlabs
 share:            true
 dropcap:			true
-default_bg: 'ogimage.png'
+default_bg: 'logo_amethyst_light_1.png'
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
@@ -17,10 +17,10 @@ io:
 # Owner/author information
 owner:
   name:           Amethyst Labs
-  avatar:         'logo.png'
+  avatar:         'logo_amethyst_light_1.png'
   email:          team@amethystlabs.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Get online, get on Grid.
+  description:    A smart network based startup. The founders are still in college, so if the product gets delayed, curse the exams.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        'amethystlabs'
   facebook:       'amethystlabs'
