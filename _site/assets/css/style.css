@@ -186,6 +186,7 @@ main, .notepad-share-icons, .notepad-disqus {
   @media only screen and (min-width: 70em) {
       .adjustH{
           height: 520px;
+          background-color: #000
         }
       }
       @media only screen and (min-width: 1em) {

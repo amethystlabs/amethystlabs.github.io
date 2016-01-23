@@ -20,7 +20,7 @@ Description: Awesome dude, awesome life
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 <header class="notepad-site-head">
-    <div class="notepad-site-head-menu" style="background-color: #212121">
+    <div class="notepad-site-head-menu" style="background-color: #000">
         <a class="notepad-blog-logo" href="/"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
 
 
@@ -52,14 +52,14 @@ Description: Awesome dude, awesome life
                 {{ site.title }}
             </span>
         </h1>
-        <h2 class="notepad-blog-description" style="color: #000">{{ site.description }}</h2>
+        <h2 class="notepad-blog-description" style="color: #fff">{{ site.description }}</h2>
     </div>
     <div id="particles-js"></div>
   </div>
 </header>
 
 
-<main class="notepad-content" role="main">
+<main class="notepad-content" role="main" style="background-color: #000">
 
             {{ content }}
     {% include footer.html %}
