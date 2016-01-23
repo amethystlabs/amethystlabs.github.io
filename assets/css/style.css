@@ -200,6 +200,9 @@ main, .notepad-share-icons, .notepad-disqus {
               top: 40px;
               font-size: 1.375rem;
               }
+              .adjustH{
+                  background-color: #000
+                }
             }
       @media only screen and (min-width: 16em) {
             .notepad-site-head .notepad-site-head-content h1 {
