@@ -9,7 +9,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="/" />
-<updated>2016-01-24T01:54:44+05:30</updated>
+<updated>2016-01-31T02:28:16+05:30</updated>
 <id>/</id>
 <author>
   <name>Amethyst Labs</name>
@@ -32,7 +32,9 @@
   <category scheme="/tags/#grid" term="grid" /><category scheme="/tags/#amethyst" term="amethyst" />
   <content type="html">
   
-    &lt;p&gt;I haven’t been to a lot of networking events, nor have I met with a lot of startup
+    &lt;p&gt;&lt;img src=&quot;/images/grid.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I haven’t been to a lot of networking events, nor have I met with a lot of startup
 guys but I have talked to the people around me. There’s a lot
 less pressure while answering their questions. Except for the million dollar one.&lt;/p&gt;
 
@@ -50,46 +52,41 @@ and we did. This post answers all the questions, and clears the air around Grid.
 
 &lt;h2 id=&quot;what-are-we-building&quot;&gt;What are we building?&lt;/h2&gt;
 
-&lt;p&gt;We have devoted around a year to this project and have built an ecosystem
-of applications, which don’t need to rely on a third party connectivity media to operate.
-In simpler words, we have made a layer, or a platform over current technologies,
-which is basically what Internet would be if it didn’t have so much of centralization.
-Think of Grid as your portal to an independent network. Grid never ever depends on a third
-variable. It will always build it’s own network if needed or if a base is provided, it will use it
-to craft out a decentralized network. One thing is for sure, there won’t be central points of failures
-in Grid and you wouldn’t have to depend on someone else’s service to connect.&lt;/p&gt;
+&lt;p&gt;If you were to go back to the year 1974 and claim that the computers are going to change the way
+we live our daily lives, that each person should own a PC, you probably would seem like this guy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ein.jpg&quot; alt=&quot;BUY A PC!!!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Those were the days when computers were seen as some scientific machines only to be used by scientists or wizards.
+The mere thought of owning a PC was simply impalpable. But then it happened. 1977, Apple 2 is launched, and the world
+loses it. The year heralded the era of personal computing.&lt;/p&gt;
+
+&lt;p&gt;We live in the age of data, where everything that surrounds us is linked to a data source and everything in our lives is captured digitally. Now just take a minute to think about all the ways you are using this data.&lt;/p&gt;
+
+&lt;p&gt;Well, my list was just blank. The applications I use, the websites I visit, all of them track my data and make their service adapt to my
+taste or style. But, the intimacy, it’s just shallow. It’s always about suggested friends on social networks or “&lt;em&gt;Here’s what others bought…&lt;/em&gt;” kind of suggestions. The data always affects you in an &lt;strong&gt;indirect&lt;/strong&gt; way.&lt;/p&gt;
+
+&lt;p&gt;Not that I can, but I too don’t bother to consume the data around me. It’s just there, but I don’t have a way to reach it. I am fine with google now cards and suggested pages on facebook. But what if there was a way to reach this mid air floating data? What if you could know all about your vicinity? Say, know if the inbound bus is crowded or not so that you could take the metro. Or, how long is the token queue at the metro station? Or, just about anything related to your surroundings?&lt;/p&gt;
+
+&lt;p&gt;We are building a future where you use data &lt;strong&gt;directly&lt;/strong&gt;, where you don’t think it’s for just scientists and wizards.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;what-exactly-is-grid&quot;&gt;What exactly is Grid?&lt;/h2&gt;
-&lt;p&gt;The world today is binary, you are either online or offline and Grid aims to change this scenario.
-Talking about offline, a large percentage of population has Internet availability and uses it on the go.
-I mean who doesn’t have 3g or at least 2g on their phones, almost no one. Then what is the point of making
-Grid work for offline cases, you might ask. You know the answer yourself, you are aware of the anxiety when
-your Internet stops for 3 seconds. If the stalling of your social life can make you this much anxious, then imagine the plight
-of people who really need to connect. Imagine a disaster struck city, with communications wiped out. Or imagine yourself walking
-hurriedly towards home through an unsafe neighborhood at night with no signal on phone. These example clearly show the need of
-a backup network, one which is independent and and controlled by the people themselves.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+If a good sounding portmanteau of words AI and Network existed, we would have gone for that as the name over &lt;code&gt;Grid&lt;/code&gt;. But sadly there isn’t one.&lt;/p&gt;
 
-&lt;h4 id=&quot;off-the-internet&quot;&gt;Off the Internet&lt;/h4&gt;
+&lt;p&gt;Grid can be seen as a mobile application which does just 4 things. &lt;strong&gt;First&lt;/strong&gt;, it uses your phone’s Bluetooth and WiFi to build a decentralized p2p network. &lt;strong&gt;Second&lt;/strong&gt;, it acts as a platform so that other apps built by developers can use this network. &lt;strong&gt;Third&lt;/strong&gt;, it lets you query your surroundings. For eg:&lt;em&gt;“Find a coffeehouse near me with the least crowd”&lt;/em&gt;. &lt;strong&gt;Fourth&lt;/strong&gt;, learns your preferences and style and gives you notifications on that basis.
+&lt;strong&gt;But since
+it’s a P2P network, this data stays on your phone only. No cloud, no servers, not even a scratch to privacy.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;To become independent, Grid uses the resources of your smartphone to make a network of its own. Currently on Android, the
-app will first search for Grid hotspots(phones which have tethering mode on) and if one is found, will connect to it and your
-phone will become a part of a larger Grid. If there are no hotspots available, the app will turn your phone into one.
-With such a network, which is formed by you and other users, it is impossible for it to fail because of conventional
-problems. There are no central servers which can be brought down, there are no strings which control the network. It can
-be a lifesaver in places which are often affected by floods or any disaster. Only a few minutes of connectivity too can help
-in tracking survivors. Or if you find yourself in a dangerous neighborhood, you can always leverage Grid to contact and ask for help.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/system.jpg&quot; alt=&quot;system&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;on-the-internet&quot;&gt;On the Internet&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;We have you covered when you don’t get a signal on your phone, but why would you need us when you are on Internet.
-There is everything, literally the world, on net, so what is the purpose of Grid on Internet? To answer that, let us first look
-at the current state of Internet. There are thousands of platforms which offer many services for users, they can use them to
-connect, chat, or do anything they like. Users join the platform they wish to use and enjoy the services.Now take a moment to realize that you are so dependent on these platforms that if you are not on them then you are simply isolated. If you want to use
-a service, you need to be on a platform. And if you think about it, these platforms control what you can do and can not.&lt;/p&gt;
-
-&lt;p&gt;With Grid we aim to change that. The app checks if Internet is available and if it is, then the users are connected directly
-to each other without any central intervention, just like the offline case above. And now you don’t need to depend on any platform to use a service. While working on it, I realized one thing, that Internet is great for long distance connections, without it we just can’t do anything, but the way we have been using it renders it impossible for us to connect around us.
-It’s like everyone around you is invisible or simply non existent unless you visit the central park. In the park, you get everything, there are people, shops, everything, but outside of it, nothing.&lt;/p&gt;
+&lt;p&gt;Each of the 4 features, rather services, disrupt the way you consume data or connect. The P2P network acts as a backup
+to the Internet. It can work when there is no signal or no connection to Internet. And the AI/Data system built over it gives you immense amount of power and a real sense of control. The system could be used as a &lt;strong&gt;Vehicle to Vehicle communication&lt;/strong&gt; module. It could alert you about speeding vehicles coming from behind or could help you avoid accidents in 0 visibility scenarios. The possibilities are infinite. Everything depends on how you decide to use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-customary-api&quot;&gt;The customary API&lt;/h2&gt;
 
@@ -113,8 +110,7 @@ you can begin with the development.&lt;/p&gt;
         &lt;span class=&quot;cm&quot;&gt;/*This is where you plugin really starts running. Configurations are complete&lt;/span&gt;
 &lt;span class=&quot;cm&quot;&gt;        and now you can &amp;quot;do the tango&amp;quot;.&lt;/span&gt;
 &lt;span class=&quot;cm&quot;&gt;        For this example, we will launch an activity called &amp;quot;PluginActivity&amp;quot;.&lt;/span&gt;
-&lt;span class=&quot;cm&quot;&gt;        This is your launcher activity.&lt;/span&gt;
-&lt;span class=&quot;cm&quot;&gt;        Add it to the AndroidManifest.xml. Or dont, we will talk about the Manifest soon anyways.*/&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;        This is your launcher activity.*/&lt;/span&gt;
 
         &lt;span class=&quot;n&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOG_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;run: Running ChatterPlug. Starting Activity&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;Intent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getBaseContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PluginActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
@@ -151,7 +147,7 @@ you can begin with the development.&lt;/p&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;moar-plugins&quot;&gt;Moar plugins&lt;/h2&gt;
-&lt;p&gt;We have 3 plugins lined up for you. The first one is a simple messenger which runs on Grid.
+&lt;p&gt;We have 3 plugins lined up for you. The first one is a simple social network which runs on Grid.
 Second we have &lt;code&gt;Aether&lt;/code&gt;, it is the www of our network and the de facto browser for us.
 Lastly, we have &lt;code&gt;Zeal&lt;/code&gt;, it is a music app which streams the music located on your device to the
 nearby Grid users.&lt;/p&gt;
@@ -164,7 +160,7 @@ nearby Grid users.&lt;/p&gt;
 but we had to scrap that up because things broke too easily. The API and the network, both
 have been tested extensively now, and the results are promising. We upgraded our plugin framework, and
 the network as well. It is now far more easier to use the API and the host app’s battery usage
-has been brought down too. We plan to have an alpha in december and a private beta in january(could start from Jan 15th).&lt;/p&gt;
+has been brought down too. We plan to have an alpha in February and a private beta in March.&lt;/p&gt;
 
 &lt;p&gt;And now we are on the same page regarding the project. You have a clear idea of it now and we would
 really love to talk more about it if you want. And it would be really awesome if you helped us
