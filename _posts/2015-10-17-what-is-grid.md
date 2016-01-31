@@ -23,7 +23,7 @@ My answer involves wrenched guts, sweating palms, and a fake smile. It is not th
 have a definition of Grid, I do, but that definition is not what people want to
 hear. What they really want to know is _What am I building for them?_ or _What value
 does my product bring to them?_ And THAT is a tough question. Tough, because Grid
-does not do just one thing, it has a myriad of applications. And when someone asks `What
+does not do just one thing, it has myriad applications. And when someone asks `What
 does Grid do?`, it is like a brain system crash. We really needed to sort this out,
 and we did. This post answers all the questions, and clears the air around Grid.
 
