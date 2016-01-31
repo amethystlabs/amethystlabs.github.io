@@ -60,7 +60,7 @@ Grid can be seen as a mobile application which does just 4 things. **First**, it
 it's a P2P network, this data stays on your phone only. No cloud, no servers, not even a scratch to privacy.**
 
 
-![system](/images/system.jpg)
+![system](/images/csystem.jpg)
 
 <br/>
 
